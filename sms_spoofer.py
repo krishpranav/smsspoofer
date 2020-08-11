@@ -3,22 +3,18 @@ import urllib
 import sys
 import os.path
 
+author()
+
 ERROR_API = "Error during API call"
 ERROR_FILE = "The specified file does not exist"
 URL = 'https://api.smsmode.com/http/1.6/'
 PATH_SEND_SMS = "sendSMS.do"
 PATH_SEND_SMS_BATCH = "sendSMSBatch.do"
 
-"""
-*    Function parameters:
-*
-*    - access_token (required)
-*    - message (required)
-*    - destinataires (required): Receivers separated by a comma
-*    - emetteur (optional): Allows to deal with the sms sender
-*    - option_stop (optional): Deal with the STOP sms when marketing send (cf. API HTTP documentation)
-*    - batch_file_path (required for batch mode): The path of CSV file for sms in Batch Mode
-"""
+def author():
+    print("TOOL IS CREATED BY KRISNA PRANAV")
+    print("Github Link https://www.github.com/krishpranav")
+    print("DO NOT FORGET TO FOLLOW ME :)")
 
 
 class ExempleClientHttpApi:
